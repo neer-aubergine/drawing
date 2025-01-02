@@ -1,7 +1,8 @@
 //This is jquery syantax to autoexecute function once
 let socket, sendMessageBoard;
 $(() => {
-  socket = io.connect("http://localhost:8000");
+  // socket = io.connect("http://localhost:8000");
+  socket = io.connect("https://drawing-37mh.onrender.com");
   sendMessageBoard = new DrawingBoard.Board("sendMessageBoard");
   $("#sendDWGbtn").click(() => {
     // Send image to server on button click
